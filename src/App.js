@@ -1,10 +1,15 @@
 import './App.css';
-import Login from './layouts/Login';
+import DefaultLayout from './layouts/DefaultLayout';
+import CustomerManagement from './pages/TellerOperation/CustomerManagement';
+// import Login from './layouts/Login';
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      {/* <Login /> */}
+      <DefaultLayout>
+          <CustomerManagement />
+      </DefaultLayout>
     </div>
   );
 }
