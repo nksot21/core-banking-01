@@ -2,8 +2,7 @@ import './Header.css'
 
 function Header() {
     return (
-        <header
-            className='wrapper'
+        <header className='wrapper'
         >
             <div className='inner'>
                 <div className='logo'>
@@ -11,7 +10,7 @@ function Header() {
                         src = "http://corebanking.vietvictory.vn/images/logo.png"
                         alt = "VietVictory"
                         width= "190"
-                        height = "55"
+                        height = "50"
                     />
                 </div>
                 <div className='university_logo'>

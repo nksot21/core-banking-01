@@ -1,3 +1,11 @@
 .inner {
     display: flex;
 }
+
+.wrapper {
+    height: 60px;
+    /* display: flex; */
+    /* position: fixed;  */
+    /* top: 0;
+    left: 0;  */
+}

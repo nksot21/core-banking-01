@@ -1,7 +1,50 @@
 import React, { useState } from 'react'
-// import {Link} from 'react-router-dom'
-// import styled from 'styled-components'
-import './SubMenu.css'
+import {Link} from 'react-router-dom'
+import styled from 'styled-components'
+
+const SidebarLink = styled(Link)`
+    display: flex;
+    color: #e1e9fc;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 10px;
+    padding: 10px;
+    list-style: none;
+    height: 70px;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 0px 10px 0px 0px;
+
+    &:hover {
+        // background: #252831;
+        background: #b33939;
+        border-left: 4px solid #632ce4
+        cursor: pointer
+        border-radius: 0px 10px 0px 0px;
+    }
+`;
+
+const SidebarLabel = styled.span`
+    margin-left: 16px;
+`;
+
+const DropdownLink = styled(Link)`
+    // background: #414757;
+    background: #e84118;
+    height: 60px;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 16px;
+
+    &:hover {
+        // background: #632ce4;
+        background: #b33939;
+        cursor: pointer;
+    }
+`
 
 const SubMenu = ({ item }) => {
     const [subnav, setSubnav] = useState(false)
@@ -10,14 +53,13 @@ const SubMenu = ({ item }) => {
 
     return (
         <>
-            <div
-                className='SidebarLink'
+            <SidebarLink 
                 to={item.path} 
                 onClick={item.subNav && showSubnav}
             >
                 <div>
                     {item.icon}
-                    <div className='SidebarLabel'>{item.title}</div>
+                    <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
                 <div>
                     {item.subNav && subnav 
@@ -27,15 +69,15 @@ const SubMenu = ({ item }) => {
                         : null
                     }
                 </div>
-            </div>
+            </SidebarLink>
             {subnav && item.subNav.map((item, index) => {
                 return (
-                    <div className='DropdownLink' to ={item.path}
+                    <DropdownLink to ={item.path}
                         key={index}
                     >
                         {item.icon}
-                        <div className='SidebarLabel'>{item.title}</div>
-                    </div>
+                        <SidebarLabel>{item.title}</SidebarLabel>
+                    </DropdownLink>
                 )
             })}
         </>

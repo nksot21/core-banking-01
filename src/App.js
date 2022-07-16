@@ -1,16 +1,29 @@
 import './App.css';
 import DefaultLayout from './layouts/DefaultLayout';
-import CustomerManagement from './pages/TellerOperation/CustomerManagement';
-// import Login from './layouts/Login';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { privateRoutes } from "./routes";
+import LoginLayout from './layouts/LoginLayout';
 function App() {
   return (
-    <div className="App">
-      {/* <Login /> */}
-      <DefaultLayout>
-          <CustomerManagement />
-      </DefaultLayout>
-    </div>
+    <Router>
+        <Routes>
+        {
+          privateRoutes.map((route, index)=> {
+            const Page = route.component
+            let Layout
+            if (route.path === "/login") {
+              Layout = LoginLayout
+            } else {
+              Layout = DefaultLayout
+            }
+            return <Route key={index} path={route.path} element={
+              <Layout>
+                  <Page />
+              </Layout>} />
+          })
+        }
+        </Routes>
+    </Router>
   );
 }
 

@@ -17,7 +17,7 @@ function DefaultLayout({ children }) {
             <div className="content">{children} </div>
 
             {/* footer components */}
-            <div className="footer"><Footer /></div>
+            {/* <div className="footer"><Footer /></div> */}
         </div>
     )
 }
