@@ -3,6 +3,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import TextField_Custom from '../../../components/TextField_Custom'
 import Select_Custom from "../../../components/Select_Custom";
+import DatePicker_Custom from "../../../components/DatePicker_Custom";
 
 function OpenIndividualCustomer() {
     return (
@@ -55,8 +56,21 @@ function OpenIndividualCustomer() {
                         <TextField_Custom props1="GB Street" props2="35" props3="NO"/>
                         <TextField_Custom props1="GB Town/Dist" props2="35" props3="NO"/>  
                         <TextField_Custom props1="Mobile Phone" props2="15" props3="NO"/>  
-                        <Select_Custom />
-                        
+                        <Select_Custom props1="City/Province" props2="35" props3="NO"/>
+                        <Select_Custom props1="GB Country" props2="30" props3="NO"/>
+                        <Select_Custom props1="Nationality" props2="30" props3="NO"/>
+                        <Select_Custom props1="Residence" props2="30" props3="NO"/>
+                        <Select_Custom props1="Doc Type" props2="20" props3="NO"/>
+                        <DatePicker_Custom props1="Doc Issue Date" props2="350" props3="NO"/>
+                        <DatePicker_Custom props1="Doc Expiry Date" props2="350" props3="NO"/>
+                        <Select_Custom props1="Email Address" props2="35" props3="NO"/>
+                        <Select_Custom props1="Main Sector" props2="30" props3="NO"/>
+                        <Select_Custom props1="SubSector" props2="30" props3="NO"/>
+                        <Select_Custom props1="Main Industry" props2="30" props3="NO"/>
+                        <Select_Custom props1="Industry" props2="30" props3="NO"/> 
+                        <Select_Custom props1="Account Officer" props2="25" props3="NO"/> 
+
+
                     </div>
 
                 

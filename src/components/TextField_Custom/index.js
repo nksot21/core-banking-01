@@ -11,13 +11,13 @@ function TextField_Custom({props1, props2, props3}) {
                 props3.toString() === "NO" ? 
                     {
                         // display:  "inline",
-                        marginRight: "30px",
+                        marginRight: "20px",
                         marginBottom: "20px" 
                     }
                 : 
                     {
                         // lineBreak: "auto",
-                        marginRight: "30px",
+                        marginRight: "20px",
                         marginBottom: "20px" 
                     }
             }
