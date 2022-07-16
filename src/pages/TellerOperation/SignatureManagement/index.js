@@ -1,8 +1,21 @@
+import Amend from "./Amend";
+import Capture from "./Capture";
+import Enquiry from "./Enquiry";
+import See from "./See";
+import Status from "./Status";
 
 function SignatureManagement() {
     return (
         <div>
-            <h1>natureManagement</h1>
+            <Capture />
+
+            <Enquiry />
+
+            <See />
+
+            <Amend />
+
+            <Status />
         </div>
     )
 }
