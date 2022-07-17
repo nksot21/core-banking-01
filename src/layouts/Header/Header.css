@@ -9,3 +9,41 @@
     /* top: 0;
     left: 0;  */
 }
+.logo {
+    margin-right: 170px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.university_logo{
+    margin-right: 170px;
+}
+.search_bar {
+    padding-top: 5px;
+}
+
+.email_logo {
+    padding-left: 100px;
+    padding-top: 15px;
+
+}
+
+.bell_logo {
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.avt_logo {
+    padding-left: 30px;
+    padding-top: 8px;
+}
+
+.name_user {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.time {
+    padding-left: 110px;
+    padding-top: 6px;
+
+}

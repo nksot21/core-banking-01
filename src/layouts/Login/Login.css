@@ -7,14 +7,6 @@
   
   }
   
-  /* Định dạng header */
-  .header {
-    background-color: #e9d8f4;
-    color: #58257b;
-    padding: 10px;
-    text-align: center;
-  }
-  
   /* Định dạng thanh điều hướng trên cùng */
   .topnav {
     overflow: hidden;

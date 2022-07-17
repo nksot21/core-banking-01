@@ -6,7 +6,7 @@ import * as RiIcons from "react-icons/ri";
 export const SidebarData = [
   {
     title: "Teller Operation",
-    path: "/",
+    path: "#",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -38,7 +38,7 @@ export const SidebarData = [
 
   {
     title: "Transfer Operation",
-    path: "/",
+    path: "#",
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -64,14 +64,14 @@ export const SidebarData = [
   // Third
   {
     title: "Credit Operation",
-    path: "/",
+    path: "#",
     icon: <FaIcons.FaCartPlus />
   },
 
   // Four
   {
     title: "Trade Finance Operation",
-    path: "/",
+    path: "#",
     icon: <IoIcons.IoMdPeople />
   }
 ];
