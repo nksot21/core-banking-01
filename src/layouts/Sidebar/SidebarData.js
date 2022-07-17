@@ -2,34 +2,42 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
+import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import CreateIcon from '@mui/icons-material/Create';
+import BadgeIcon from '@mui/icons-material/Badge';
+import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
+import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
+import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
+import FlightLandIcon from '@mui/icons-material/FlightLand';
 
 export const SidebarData = [
   {
     title: "Teller Operation",
     path: "#",
-    icon: <IoIcons.IoIosPaper />,
+    icon: <SupervisedUserCircleIcon size="large" />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
         title: "Customer Management",
         path: "/customer_management",
-        icon: <IoIcons.IoIosPaper />
+        icon: <ManageAccountsIcon />
       },
       {
         title: "Signature Management",
         path: "/signature_management",
-        icon: <IoIcons.IoIosPaper />
+        icon: <CreateIcon />
       },
       {
         title: "Account Management",
         path: "/account_management",
-        icon: <IoIcons.IoIosPaper />
+        icon: <BadgeIcon />
       },
       {
         title: "Foreign Exchange",
         path: "/foreign_exchange",
-        icon: <IoIcons.IoIosPaper />
+        icon: <CurrencyExchangeIcon />
       }
     ]
   },
@@ -39,25 +47,20 @@ export const SidebarData = [
   {
     title: "Transfer Operation",
     path: "#",
-    icon: <AiIcons.AiFillHome />,
+    icon: <TransferWithinAStationIcon />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
-        title: "Reports 1",
-        path: "reports/reports1",
-        icon: <IoIcons.IoIosPaper />
+        title: "Outward Transaction",
+        path: "/outward_transaction",
+        icon: <FlightTakeoffIcon />
       },
       {
-        title: "Reports 2",
-        path: "reports/reports2",
-        icon: <IoIcons.IoIosPaper />
+        title: "Inward Transaction",
+        path: "/inward_transaction",
+        icon: <FlightLandIcon />
       },
-      {
-        title: "Reports 3",
-        path: "reports/reports3",
-        icon: <IoIcons.IoIosPaper />
-      }
     ]
   },
 

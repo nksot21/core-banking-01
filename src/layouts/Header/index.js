@@ -46,9 +46,9 @@ function Header() {
                 </div>
                 <div className='time'>
                     <div>
-                        <b>07:58 AM</b>
+                        <b>09:58 AM</b>
                     </div>
-                    <div>Tuesday, June 14. 2022</div>
+                    <div>Sunday, July 17. 2022</div>
 
                     
                 </div>
