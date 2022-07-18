@@ -3,7 +3,7 @@ import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css'; // optional
 
 import { useEffect, useState } from 'react';
-import Search_Custom from '../../components/Search_Custom';
+// import Search_Custom from '../../components/Search_Custom';
 import EmailIcon from "@mui/icons-material/Email";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import Box from "@mui/material/Box";
@@ -40,10 +40,11 @@ function Header() {
                             height = "55"
                         />
                 </div>
-
+{/* 
                 <div className='search_bar'>
                     <Search_Custom />
-                </div>
+                </div> */}
+
                 <div className='time'>
                     <div>
                         <b>09:58 AM</b>
