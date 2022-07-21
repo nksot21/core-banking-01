@@ -6,7 +6,9 @@ import Select_Custom from "../../../components/Select_Custom";
 import DatePicker_Custom from "../../../components/DatePicker_Custom";
 import Button_Custom from "../../../components/Button_Custom";
 
-function OpenCorporateCustomer() {
+function OpenCorporateCustomer({propsData}) {
+    console.log("children 2")
+    console.log(propsData)
     return (
         <div>
             <Accordion >

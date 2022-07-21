@@ -24,7 +24,9 @@ const rows = [
     // createData('Gingerbread', 356, 16.0, 49, 3.9),
   ];
 
-function EnquiryCustomer() {
+function EnquiryCustomer({propsData}) {
+    console.log("children 3")
+    console.log(propsData)
     return(
         <div>
             <Accordion >

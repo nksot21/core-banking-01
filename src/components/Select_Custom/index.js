@@ -1,10 +1,14 @@
 import { FormControl, InputLabel, Select } from "@mui/material"
 import MenuItem from '@mui/material/MenuItem';
+import React, { useEffect, useState } from 'react'
 
-function Select_Custom({props1, props2, props3}) {
+
+function Select_Custom({props1, props2, props3, propsData}) {
     let idLabelTemp = "lbl" + props1.toString().replace(/\s/g, '');
     let idSelectTemp = "slt" + props1.toString().replace(/\s/g, '');
     let widthTemp = props2.toString() + "ch"
+    
+    if (propsData != undefined) {
     return (
         <div
             style={
@@ -30,16 +34,21 @@ function Select_Custom({props1, props2, props3}) {
                     // value="age"
                     label={props1}
                 >
-                    <MenuItem value="">
-                        <em>None</em>
-                    </MenuItem>
-                    <MenuItem value={10}>Ten</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
+                    {
+                        propsData.map((data, index) => {
+                            console.log(data.Name)
+                            return (
+                                <MenuItem key={index} value={data.id}>{data.Name}</MenuItem>
+                            )
+                        })
+                    
+                    }
+
                 </Select>
             </FormControl>
         </div>
     )
+                }
 }
 
 export default Select_Custom;

@@ -5,8 +5,11 @@ import TextField_Custom from '../../../components/TextField_Custom'
 import Select_Custom from "../../../components/Select_Custom";
 import DatePicker_Custom from "../../../components/DatePicker_Custom";
 import Button_Custom from "../../../components/Button_Custom";
+import React, { useEffect, useState } from 'react'
 
-function OpenIndividualCustomer() {
+function OpenIndividualCustomer({propsData}) {
+    console.log("chilren")
+    console.log(propsData)
     return (
         <div>
             <Accordion >
@@ -44,10 +47,10 @@ function OpenIndividualCustomer() {
                         <TextField_Custom props1="GB Street" props2="35" props3="YES"    />
                         <TextField_Custom props1="GB Town/Dist" props2="35" props3="YES"/>  
                         <TextField_Custom props1="Mobile Phone" props2="15" props3="NO"/>  
-                        <Select_Custom props1="City/Province" props2="35" props3="NO"/>
-                        <Select_Custom props1="GB Country" props2="30" props3="NO"/>
-                        <Select_Custom props1="Nationality" props2="30" props3="NO"/>
-                        <Select_Custom props1="Residence" props2="30" props3="NO"/>
+                        <Select_Custom props1="City/Province" props2="35" props3="NO" propsData={propsData.cityProvinceData}/>
+                        <Select_Custom props1="GB Country" props2="30" props3="NO" propsData={propsData.countryData}/>
+                        <Select_Custom props1="Nationality" props2="30" props3="NO" propsData={propsData.countryData}/>
+                        <Select_Custom props1="Residence" props2="30" props3="NO" propsData={propsData.countryData}/>
                         <Select_Custom props1="Doc Type" props2="20" props3="YES"/>
                         <TextField_Custom props1="Doc ID" props2="20" props3="YES"/>
                         <DatePicker_Custom props1="Doc Issue Date" props2="350" props3="YES"/>
@@ -57,7 +60,7 @@ function OpenIndividualCustomer() {
                         <Select_Custom props1="SubSector" props2="30" props3="YES"/>
                         <Select_Custom props1="Main Industry" props2="30" props3="YES"/>
                         <Select_Custom props1="Industry" props2="30" props3="YES"/> 
-                        <Select_Custom props1="Account Officer" props2="25" props3="NO"/>
+                        <Select_Custom props1="Account Officer" props2="25" props3="NO" propsData={propsData.accountOfficerata}/>
                     </div>
                     <div
                         style={{ 
